@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
-
 /* primary */
 $ligth-red: hsl(0, 100%, 67%);
 $Orangey-yellow: hsl(39, 100%, 56%);
@@ -35,8 +34,46 @@ body{
     display: flex;
     min-height: 100vh;
     justify-content: center;
-
+    font-family: $font-stack;
 }
 .header-container{
-    display: grid;
+    color: $Pale-blue;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: rgb(46,43,233);
+    background: linear-gradient(0deg, rgba(46,43,233,1) 0%, rgba(120,87,255,1) 100%); 
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    .result{
+        opacity: 0.5;
+    }
+    .bottom-text{
+        margin-bottom: 10px;
+    }
+    .numbers{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: rgb(78,33,202);
+        width:100px;
+        height: 100px;
+        border-radius: 100%;
+
+        background: linear-gradient(0deg, rgba(78,33,202,0.7260037804184174) 26%, rgba(9,15,36,1) 95%); 
+        h1{
+            margin-bottom: 5px;
+            font-weight: bold;
+            font-size: 35px;
+        }
+        p{
+            color: $Pale-blue;
+            opacity: 0.5;
+        }
+    }
 }
+

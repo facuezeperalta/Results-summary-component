@@ -18,8 +18,45 @@ body {
   display: flex;
   min-height: 100vh;
   justify-content: center;
+  font-family: "Hanken Grotesk", sans-serif;
 }
 
 .header-container {
-  display: grid;
+  color: hsl(221, 100%, 96%);
+  width: 300px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background: rgb(46, 43, 233);
+  background: linear-gradient(0deg, rgb(46, 43, 233) 0%, rgb(120, 87, 255) 100%);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.header-container .result {
+  opacity: 0.5;
+}
+.header-container .bottom-text {
+  margin-bottom: 10px;
+}
+.header-container .numbers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgb(78, 33, 202);
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background: linear-gradient(0deg, rgba(78, 33, 202, 0.7260037804) 26%, rgb(9, 15, 36) 95%);
+}
+.header-container .numbers h1 {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 35px;
+}
+.header-container .numbers p {
+  color: hsl(221, 100%, 96%);
+  opacity: 0.5;
 }/*# sourceMappingURL=styles.css.map */
