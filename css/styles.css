@@ -59,4 +59,116 @@ body {
 .header-container .numbers p {
   color: hsl(221, 100%, 96%);
   opacity: 0.5;
+}
+
+.summary-title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  color: hsl(224, 30%, 27%);
+}
+
+.summary-reaction {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff6f5;
+}
+
+.reaction-icon {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  align-items: center;
+  background-image: url("../assets/images/icon-reaction.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+
+.summary-memory {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fffbf2;
+}
+
+.memory-icon {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  align-items: center;
+  background-image: url("../assets/images/icon-memory.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+
+.summary-verbal {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fffbf2;
+}
+
+.verbal-icon {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  align-items: center;
+  background-image: url("../assets/images/icon-verbal.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+
+.summary-visual {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f3f3fd;
+}
+
+.visual-icon {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  align-items: center;
+  background-image: url("../assets/images/icon-visual.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+
+.summary-button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 30px;
+  background-color: hsl(224, 30%, 27%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
 }/*# sourceMappingURL=styles.css.map */

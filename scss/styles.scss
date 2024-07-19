@@ -14,6 +14,11 @@ $White: hsl(0, 0%, 100%);
 $Pale-blue: hsl(221, 100%, 96%);
 $Light-lavender: hsl(241, 100%, 89%);
 $Dark-gray-blue: hsl(224, 30%, 27%);
+//colores summary fields
+$reaction-field-ligth-red: #fff6f5;
+$memory-field-ligth-yellow: #fffbf2;
+$verbal-field-ligth-green: #f2fbfa;
+$visual-field-ligth-blue: #f3f3fd;
 /* fonts and text styles */
 $font-stack: "Hanken Grotesk", sans-serif;
 $font-size-paragraphs: 1.8rem;
@@ -36,6 +41,34 @@ body{
     justify-content: center;
     font-family: $font-stack;
 }
+//mixings inicio
+@mixin iconsMixin($iconSrc){
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    align-items: center;
+    background-image: url($iconSrc);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+@mixin summaryFieldMixin($bgColor){
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: $bgColor;
+}
+
+
+
+
 .header-container{
     color: $Pale-blue;
     width: 300px;
@@ -76,4 +109,56 @@ body{
         }
     }
 }
+
+.summary-title{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: $Dark-gray-blue;
+    
+}
+
+.summary-reaction{
+    @include summaryFieldMixin($reaction-field-ligth-red);
+}
+.reaction-icon{
+    @include iconsMixin("../assets/images/icon-reaction.svg");
+  }
+
+
+
+.summary-memory{
+    @include summaryFieldMixin($memory-field-ligth-yellow);
+}
+.memory-icon{
+    @include iconsMixin("../assets/images/icon-memory.svg");
+}
+
+
+.summary-verbal{
+    @include summaryFieldMixin($memory-field-ligth-yellow);
+}
+.verbal-icon{
+    @include iconsMixin("../assets/images/icon-verbal.svg");
+}
+
+.summary-visual{
+    @include summaryFieldMixin($visual-field-ligth-blue);
+}
+.visual-icon{
+    @include iconsMixin("../assets/images/icon-visual.svg");
+}
+
+.summary-button{
+    width: 100%;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: $Dark-gray-blue;
+    color: $White;
+    cursor: pointer;
+}
+
+
+
+
 
