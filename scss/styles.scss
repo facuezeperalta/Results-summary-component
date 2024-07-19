@@ -82,7 +82,9 @@ body{
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     .result{
-        opacity: 0.5;
+        font-size: 15px;
+        margin-top: 20px;
+        color:$Pale-blue;
     }
     .bottom-text{
         margin-bottom: 10px;
@@ -101,12 +103,15 @@ body{
         h1{
             margin-bottom: 5px;
             font-weight: bold;
-            font-size: 35px;
+            font-size: 40px;
         }
         p{
             color: $Pale-blue;
             opacity: 0.5;
         }
+    }
+    .underScoreTitle{
+        font-size: 20px;
     }
 }
 
@@ -156,9 +161,39 @@ body{
     background-color: $Dark-gray-blue;
     color: $White;
     cursor: pointer;
+    border: none;
 }
 
 
+//media queries
+@media (min-width: 1440px ){
+    .general-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        justify-content: center;
+        align-content: space-around;
+        gap: 40px;
+        background-color: $White;
+        border-radius: 20px;
+        box-shadow: 31px 24px 49px -23px rgba(152, 139, 251, 0.21);
+        -webkit-box-shadow: 31px 24px 49px -23px rgba(152, 139, 251, 0.21);
+        -moz-box-shadow: 31px 24px 49px -23px rgba(152, 139, 251, 0.21);
+        height: 100%;
+        margin-top: 100px;
+    }
+    .header-container{
+        height: 100%;
+        border-radius:20px;
+    }
+    .summary-section{
 
+        padding: 20px;
+    }
+    .summary-button{
+        &:hover{
+            background: linear-gradient(0deg, rgba(46,43,233,1) 0%, rgba(120,87,255,1) 100%);  ;
+        }
+    }
+}
 
 

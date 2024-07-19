@@ -35,7 +35,9 @@ body {
   border-bottom-right-radius: 20px;
 }
 .header-container .result {
-  opacity: 0.5;
+  font-size: 15px;
+  margin-top: 20px;
+  color: hsl(221, 100%, 96%);
 }
 .header-container .bottom-text {
   margin-bottom: 10px;
@@ -54,11 +56,14 @@ body {
 .header-container .numbers h1 {
   margin-bottom: 5px;
   font-weight: bold;
-  font-size: 35px;
+  font-size: 40px;
 }
 .header-container .numbers p {
   color: hsl(221, 100%, 96%);
   opacity: 0.5;
+}
+.header-container .underScoreTitle {
+  font-size: 20px;
 }
 
 .summary-title {
@@ -171,4 +176,32 @@ body {
   background-color: hsl(224, 30%, 27%);
   color: hsl(0, 0%, 100%);
   cursor: pointer;
+  border: none;
+}
+
+@media (min-width: 1440px) {
+  .general-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-content: space-around;
+    gap: 40px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    box-shadow: 31px 24px 49px -23px rgba(152, 139, 251, 0.21);
+    -webkit-box-shadow: 31px 24px 49px -23px rgba(152, 139, 251, 0.21);
+    -moz-box-shadow: 31px 24px 49px -23px rgba(152, 139, 251, 0.21);
+    height: 100%;
+    margin-top: 100px;
+  }
+  .header-container {
+    height: 100%;
+    border-radius: 20px;
+  }
+  .summary-section {
+    padding: 20px;
+  }
+  .summary-button:hover {
+    background: linear-gradient(0deg, rgb(46, 43, 233) 0%, rgb(120, 87, 255) 100%);
+  }
 }/*# sourceMappingURL=styles.css.map */
